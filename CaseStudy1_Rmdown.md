@@ -79,8 +79,7 @@ allPlot <- ggplot(testMerge, aes(x=`CountryCode`, y=`GDP (millions of US dollars
   geom_bar(stat='identity') +
   coord_flip() +
   theme(axis.text.y = element_text(vjust = 1, size = 4)) +
-  scale_y_continuous(labels = scales::comma) +
-  labs(x = 'Country')
+  scale_y_continuous(labels = scales::comma)
 
 
 #Saving the plot in png format to be displayed in Github
