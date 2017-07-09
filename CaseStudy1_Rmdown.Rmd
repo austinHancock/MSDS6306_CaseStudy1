@@ -1,6 +1,6 @@
 ---
 title: "CaseStudy1_Rmd"
-author: "Austin Hancock - Ernesto Carrera - Matthew Przybyl"
+author: "Austin Hancock - Ernesto Carrera - Matthew Przybyla"
 date: "7/9/2017"
 output: html_document
 ---
@@ -71,6 +71,14 @@ HiInNOecd <- round(mean(tHiNOE$`Rank`,na.rm=TRUE),2)
 ```
   The average GDP rankings for the "High Income nonOECD" is: `r HiInNOecd` 
 
+```{r}
+#Number of missing values for High income: nonOECD
+CountMissing_HiNOE<-length(which(is.na(tHiNOE$`Rank`)))
+CountMissing_HiNOE
+```
+
+The number of missing rankings for the group "High Income nonOECD" is: `r CountMissing_HiNOE`
+  
 
 4) Plot the GDP for all the countries. 
 ```{r results='hide'}
