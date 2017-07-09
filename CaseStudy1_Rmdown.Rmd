@@ -2,9 +2,7 @@
 title: "CaseStudy1_Rmd"
 author: "Austin Hancock - Ernesto Carrera - Matthew Przybyla"
 date: "7/9/2017"
-output: 
-  html_document:
-    keep_md: true
+output: github_document
 ---
 
 # Introduction
@@ -42,7 +40,7 @@ match<-testMerge[which(!is.na(testMerge$`CountryCode`)),1]
 ```
 The answers to the questions of interest are:
 
-1) The number of countries that match are: ```{r} length(match)```
+1) The number of countries that match are: `rlength(match)`
 
 ```{r}
 ## 2 - Sort Ascending GDP DATA
